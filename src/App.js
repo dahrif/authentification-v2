@@ -1,7 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+
+  axios.post('http://localhost/reactimageupload.php', fd
+      ).then(res=>
+      {
+       
+         //Success alert
+       Swal.fire({
+        title: 'Therichpost',
+        text: res.data.data,
+        icon: 'success',
+        
+      });
+    this.myFormRef.reset();
+    
+    }
+    );
+    }
+
   return (
     <div className="login-wrap">
   

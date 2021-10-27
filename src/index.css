@@ -18,16 +18,19 @@ a{color:inherit;text-decoration:none}
   max-width:525px;
   min-height:80vh;
   position:relative;
-  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-  background:#fff;
-
+  box-shadow:0 12px 15px 0 rgba(255, 255, 255, 0.1),0 17px 50px 0 rgba(0,0,0,.19);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
 }
 .login-html{
   width:100%;
   height:80vh;
   position:absolute;
   padding:60px 70px 50px 70px;
-  background:#fff;
+  backdrop-filter: blur(15px);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   }
 
 .login-html .sign-in-htm,
@@ -63,7 +66,7 @@ a{color:inherit;text-decoration:none}
 }
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
-  color:#361e5d;
+  color:#fff;
 }
 .login-form{
   min-height:345px;
@@ -88,8 +91,8 @@ a{color:inherit;text-decoration:none}
   border:none;
   padding:15px 20px;
   margin-bottom: 15px;
-  border-radius:25px;
-  background:#E8F0FE;
+  border-radius:6px;
+  background: rgba(255, 255, 255, 0.74);
 }
 
 .login-form .group .button{

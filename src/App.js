@@ -1,28 +1,10 @@
+import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 
 function App() {
-
-  axios.post('http://localhost/reactimageupload.php', fd
-      ).then(res=>
-      {
-       
-         //Success alert
-       Swal.fire({
-        title: 'Therichpost',
-        text: res.data.data,
-        icon: 'success',
-        
-      });
-    this.myFormRef.reset();
-    
-    }
-    );
-    }
-
   return (
     <div className="login-wrap">
-  
+
         <div className="login-html">
           <input id="tab-1" type="radio" name="tab" className="sign-in" defaultChecked />
           <label htmlFor="tab-1" className="tab">CONNEXION</label>
@@ -31,7 +13,7 @@ function App() {
 
 
 
-          
+
           <div className="login-form">
             <form className="sign-in-htm" action="./api/Users/login.php" method="POST">
               <div className="group">
@@ -44,7 +26,7 @@ function App() {
                <input type="submit" name="submit" className="button" defaultValue="Connexion" />
               </div>
               <div className="hr" />
-              
+
             </form>
             <form className="sign-up-htm" action="./api/Users/signup.php" method="POST">
               <div className="group">
@@ -59,15 +41,15 @@ function App() {
               <div className="group">
                 <input id="pass" type="password" className="input" placeholder="Confirmer mot de passe" required />
               </div>
-           
-              <div className="group">
-            
-              <input type="submit" name="submit" className="button" defaultValue="Créer votre compte" />
-            
-              </div>
-             
 
-             
+              <div className="group">
+
+              <input type="submit" name="submit" className="button" defaultValue="Créer votre compte" />
+
+              </div>
+
+
+
             </form>
           </div>
         </div>

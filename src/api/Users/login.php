@@ -37,7 +37,7 @@ if($stmt->rowCount() > 0){
 else{
     echo '<script>
     alert("Les données saisie sont incorrectes !"); 
-    window.location.href="/../login.html";
+    window.location.href="http://localhost:3000/";
     </script>';
 }
 

@@ -20,7 +20,7 @@ if($user->signup()){
     
         echo '<script>
 		alert("Votre compte a été bien créé"); 
-		window.location.href="/../login.html";
+		window.location.href="http://localhost:3000/";
 		</script>' ;
   
 }
@@ -28,7 +28,7 @@ if($user->signup()){
 else{
         echo'<script>
 		alert("Ce compte existe déja"); 
-		window.location.href="/../login.html";
+		window.location.href="http://localhost:3000/";
 		</script>' ;
 }
 

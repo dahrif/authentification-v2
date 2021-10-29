@@ -10,11 +10,8 @@ function App() {
           <input id="tab-2" type="radio" name="tab" className="sign-up" />
           <label htmlFor="tab-2" className="tab">INSCRIPTION</label>
 
-
-
-
           <div className="login-form">
-            <form className="sign-in-htm" action="./api/Users/login.php" method="POST">
+            <form className="sign-in-htm" action="http://localhost:8000/login.php" method="POST">
               <div className="group">
                 <input id="username" name="username" type="text" className="input" placeholder="Nom d'utilisateur" required/>
               </div>
@@ -27,7 +24,7 @@ function App() {
               <div className="hr" />
 
             </form>
-            <form className="sign-up-htm" action="./api/Users/signup.php" method="POST">
+            <form className="sign-up-htm" action="http://localhost:8000/signup.php" method="POST">
               <div className="group">
                 <input id="username" name="username" type="text" className="input" placeholder="Nom d'utilisateur" required/>
               </div>

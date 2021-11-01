@@ -24,7 +24,7 @@ header("location: ../../login.html");
     
     <?php
     
-     echo "<div class='text-center user'><h3>Coucou <span class='username'>" .$_SESSION['username']. "</span> </h3> <a class='btn btn-danger' href='http://localhost:8000/logout.php'>Deconnection</a></div>";
+     echo "<div class='text-center user'><h3>Coucou <span class='username'>" .$_SESSION['username']. "</span> </h3> <a class='btn btn-danger' href='http://localhost:8000/src/api/Users/logout.php'>Deconnection</a></div>";
 
      ?>
 
